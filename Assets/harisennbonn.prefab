@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: -3845433405232376216}
   - component: {fileID: -704289877692244718}
   - component: {fileID: -619148359876271855}
-  - component: {fileID: 3861450487381285997}
+  - component: {fileID: 2775953316885189275}
+  - component: {fileID: 1791875130513649846}
   m_Layer: 11
   m_Name: harisennbonn
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +102,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 1.5
 --- !u!50 &-704289877692244718
 Rigidbody2D:
   serializedVersion: 4
@@ -138,7 +139,7 @@ MonoBehaviour:
   rigidbody2D: {fileID: 0}
   direction: {x: 0, y: -1}
   relativeToRotation: 1
---- !u!114 &3861450487381285997
+--- !u!114 &2775953316885189275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,8 +148,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3526222044983610562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fa3c260db47248a18ecb8112019040d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1703bd5096df2ca4e94b1e9cd6be1ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyWhenActivated: 1
-  healthChange: -1
+--- !u!114 &1791875130513649846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526222044983610562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd532b76c9da506408dc487131c6aefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

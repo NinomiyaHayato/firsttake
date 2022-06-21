@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class gamemanegiment : MonoBehaviour
+public class DestroyP : MonoBehaviour
 {
-    [SerializeField] Image _gameclear;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +17,9 @@ public class gamemanegiment : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag =="goal")
+        if(collision.gameObject.tag == "Player")
         {
-            
-            _gameclear.gameObject.SetActive(true);
-
+            Destroy(gameObject);
         }
     }
-    
 }

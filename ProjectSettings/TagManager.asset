@@ -11,6 +11,9 @@ TagManager:
   - Pickup
   - goal
   - shark
+  - enemy
+  - enemy2
+  - Enemy2
   layers:
   - Default
   - TransparentFX
@@ -27,13 +30,13 @@ TagManager:
   - kurage
   - ika
   - shark
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - goal
+  - tatunootosigo
+  - daiou
+  - tyuutin
+  - anmonite
+  - kodai
+  - penguin
   - 
   - 
   - 
